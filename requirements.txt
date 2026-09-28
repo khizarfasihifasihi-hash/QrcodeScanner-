@@ -1,0 +1,10 @@
+flask
+langchain_core
+langchain_groq
+qrcode
+pillow
+streamlit
+pandas
+plotly
+opencv-python
+numpy
