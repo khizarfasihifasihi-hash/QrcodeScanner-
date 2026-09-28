@@ -6,5 +6,8 @@ pillow
 streamlit
 pandas
 plotly
-opencv-python
+# Headless build works on servers / Streamlit Cloud (no libGL needed).
+# Only for the local live-webcam window (python qr_scanner.py --webcam),
+# swap it for: opencv-python
+opencv-python-headless
 numpy
