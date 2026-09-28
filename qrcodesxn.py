@@ -199,7 +199,7 @@ def run_streamlit():
     st.caption("Scan a customer's order QR code. OpenCV reads it, LangChain briefs the rider.")
 
     server_url = st.sidebar.text_input(
-        "FoodOrder server URL (optional)", placeholder="https://your-name.ngrok-free.dev",
+        "FoodOrder server URL (optional)", value=os.environ.get("FOODORDER_SERVER_URL", ""), placeholder="https://your-name.ngrok-free.dev",
         help="Where orders are looked up. Leave empty to use the address inside the QR code. "
              "Set it if the QR points to localhost or another unreachable address.")
 
